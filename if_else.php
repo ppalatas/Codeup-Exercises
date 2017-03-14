@@ -7,9 +7,8 @@ $c = '10';
 // TODO: Shorten these two if statements to a single if/else
 if ($a < $b) {
     echo "$a is less than $b\n";
-}
 
-else ($a >= $b) {
+} else if ($a >= $b){ 
     echo "$a is greater than or equal to $b\n";
 }
 
@@ -17,7 +16,7 @@ else ($a >= $b) {
 if ($b < $c) {
     echo "$b is less than $c\n";
 }
-else ($b >= $c) {
+else if($b >= $c) {
     echo "$b is greater than or equal to $c\n";
 }
 
@@ -31,6 +30,6 @@ if ($b === $c) {
 else if ($b == $c) {
     echo "$b is equal to $c\n";
 }
-else ($b != $c) {
+else if($b != $c) {
     echo "$b is not equal to $c\n";
 }
