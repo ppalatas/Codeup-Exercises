@@ -32,7 +32,7 @@ $books = array(
 			echo $value . PHP_EOL . "\n";
 		}
 	}
-	}
+}
 
 
 
