@@ -22,12 +22,15 @@ $books = array(
         'pages' => 544
     )
 );
-
+	
 	foreach ($books as $title => $book){
-		echo $title . PHP_EOL . "\n";
+		if($book['published'] >= 1950){
+		
+			echo $title . PHP_EOL . "\n";
 
-	foreach($book as $key => $value){
-		echo $value . PHP_EOL . "\n";
+		foreach($book as $key => $value){
+			echo $value . PHP_EOL . "\n";
+		}
 	}
 }
 
