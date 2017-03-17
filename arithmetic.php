@@ -1,7 +1,7 @@
 <?php
-$a = 2; 
+$a = 6; 
 
-$b = 4;
+$b = 2;
 function add($a, $b)
 {
     return $a + $b;
