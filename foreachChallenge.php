@@ -125,7 +125,7 @@
 		$directions = ['North', 'East', 'South', 'West'];
 	
 	if(strstr($name, "North") || strstr($name, "East") || strstr($name, "South") || strstr($name, "West")){
-		echo "These are States with north, south, east, or west in their name: " . " " . $name . PHP_EOL;
+		echo "These are States with north, south, east, or west in their name: " . PHP_EOL . " " . $name . PHP_EOL;
 	}
 }
 
