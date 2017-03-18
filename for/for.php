@@ -18,8 +18,8 @@ $countBy = trim(fgets(STDIN));
 	
 	if (empty($countBy)){
 		$countBy = 1;
-
 	}
+	
 // input
 
 
