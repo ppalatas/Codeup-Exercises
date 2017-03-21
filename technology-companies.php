@@ -55,9 +55,10 @@ ksort($companies);
 
 var_dump($companies);
 
-foreach($companies as $title => $value){
+foreach($companies as $title => $value){ 
     asort($value);
  
     var_dump($value);
 }
+
 
