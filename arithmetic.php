@@ -3,15 +3,15 @@ $a = 6;
 
 $b = 2;
 
-function(throwErrorIsMessay($a, $b)){
-	return "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
-}
+// function(throwErrorMessage($a, $b)){
+// 	return "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
+// }
 
 function add($a, $b){
 	if(is_numeric($a) && is_numeric($b)){
     	return $a + $b;
 		} else {
-        	return function(throwErrorIsMessay($a, $b));
+        	return "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
     }
 }
 
@@ -20,7 +20,7 @@ function subtract($a, $b)
 	if(is_numeric($a) && is_numeric($b)){
     	return $a - $b;
 		} else {
-        	return  function(throwErrorIsMessay($a, $b));
+        	return  "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
     	}
 }
 
@@ -29,7 +29,7 @@ function multiply($a, $b)
 	if(is_numeric($a) && is_numeric($b)){
     	return $a * $b;
 		} else {
-        	return  function(throwErrorIsMessay($a, $b));
+        	return  "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
     	} 
 }
 
@@ -48,7 +48,7 @@ function divide($a, $b)
     }
     else
     {
-   	   return function(throwErrorIsMessay($a, $b));
+   	   return "ERROR: Both arguments must be numbers\n" . $a . "and" . $b . "are not numeric." . PHP_EOL;
     }
 }
 
