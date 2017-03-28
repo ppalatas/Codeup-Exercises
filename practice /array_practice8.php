@@ -13,12 +13,8 @@ $temperatures = array (78, 60, 62, 68, 71, 68, 73, 85, 66, 64, 76, 63, 75, 76, 7
 
 $average = array_sum($temperatures) / count($temperatures);
 
-	asort($temperatures);
-do
-{
-	echo "The seven lowest temperatures are :" . " " . $temperatures[$i]"°" . PHP_EOL;
-	$i++;
-} while($i <= 7);
+	sort($temperatures);
+
 
 // sort($temperatures, 'sort_flags = sort_numeric');
 var_dump($temperatures);
@@ -31,6 +27,14 @@ var_dump($temperatures);
 
 echo "The Average Temperature is:" . " " . $average . " " . PHP_EOL;
 
+$i = 0;
+
+do
+{
+	echo "The seven lowest temperatures are :" . " ";
+	echo $temperatures[$i++] . "," . " " . $temperatures[$i++] . "," . $temperatures[$i++] . "," . $temperatures[$i++] . "," . $temperatures[$i++] . "," . $temperatures[$i++] . "," . $temperatures[$i++] . PHP_EOL;
+	
+} while($i <= 7);
 
 
 
