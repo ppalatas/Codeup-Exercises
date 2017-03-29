@@ -18,14 +18,5 @@ $animalToAdd = 'lion';
 // ^^ the above line would search an array called $arrayToSearch, find element 2, and add "string"
 // to the right of it
 
-array_splice($animals, 3, 0, $animalToAdd);
+array_splice($animals, 2, 0, $animalToAdd);
 var_dump($animals);
-
-$index = array_search('parrot', $animals)
-if($index !== FALSE){
-	unset($animals[$index]);
-}
-
-array_unshift($animals, $animalToAdd);
-var_dump($animals);
-

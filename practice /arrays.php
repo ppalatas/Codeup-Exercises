@@ -4,9 +4,9 @@
 
 $array = ['pants', 'shirt', 'shoes'];
 
-function addString($arrayx, $stringToPush){
-	array_push($arrayx, $stringToPush);
-	return $arrayx;
-}
+function addToArray($array, $string){
+	
+	array_push($array, $string);
 
-var_dump(addString($array, "Hi"));
+}
+echo addToArray($array, 'Hi');
