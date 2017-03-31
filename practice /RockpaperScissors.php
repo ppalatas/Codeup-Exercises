@@ -29,8 +29,6 @@ function whoWonRockPaperScissors($array1, $array2){
 	} else {
 		echo "Player 2 Wins!";
 	}
-
-
 }
 
 whoWonRockPaperScissors($player1, $player2);
