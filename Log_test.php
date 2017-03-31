@@ -8,19 +8,24 @@
 require_once "Log.php";
 
 // XXX Create an instance of the Log class
-$firstLog = new Log();
+$log = new Log();
+
+$log->error("$bob is undefined ");
 
 
 // Set the $filename property in the class; use the format log-YYYY-MM-DD.log.
-$firstLog->filename = "log-" . date("Y-m-d") . ".log";
+// $log->info("user logged in");
+// $log->("Some other user logged in");
+
+// $log->error("Something went wrong");
 
 
 // Call the methods logMessage(), info(), and error() with to test the functionality of each.
 
-$firstLog->logMessage() . PHP_EOL;
+// $firstLog->logMessage() . PHP_EOL;
 
-$firstLog->error("You have an error.") . PHP_EOL;
+// $firstLog->error("You have an error.") . PHP_EOL;
 
-$firstLog->info("Here is your info.") . PHP_EOL;
+// $firstLog->info("Here is your info.") . PHP_EOL;
 
  ?>
