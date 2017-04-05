@@ -1,39 +1,74 @@
  <?php  
 
+ // 5) Write a class of Rectangle:
+ //        - write properties for width, height, area
+
+ //        - write a method of calculateArea() that when called calculates the area and sets the value of the area property ** You will need to use $this **
+
+ //        - write a method of changeDimensions($length1, $length2) which sets new values for the width and height
+
+ //        - Instantiate a Rectangle object in oop_test.php and set width and height to 2 and 3. 
+
+ //        - Call and echo the results of calculateArea(). Call changeDimensions(4, 6), call calculateArea() and echo out the new area.
+
+
+
+
+class Rectangle
+{
+	public $width;
+	public $height;
+	public $area;
+	
+	public function calculateArea($a, $b)
+	{
+	
+		return $a * $b; 
+	}
+	
+	public function changeDimensions($length1, $length2)
+	{
+	
+	
+	}
+
+
+}
+ 
  // 4) Write a class of Restaurant:
  //        - write at least 5 properties of your choice // (e.g. name, numberOfEmployees, cuisine, hoursOfOperation, etc.) examples
  //        - write at least 5 methods of your choice // (e.g. cookOrder(), takeOrder(), cleanTable() etc.)
  //        - Instantiate a restaurant object and set all properties to match your favorite restaurant in oop_test.php.
 
-class Restaurant{ 
-	 public $name;
-	 public $hoursOfOperation;
-	 public $foodServed;
-	 public $numberOfEmployees;
-	 public $wages;
+// class Restaurant{ 
+// 	 public $name;
+// 	 public $hoursOfOperation;
+// 	 public $foodServed;
+// 	 public $numberOfEmployees;
+// 	 public $wages;
 	
 	
-	 public function nameOfRestaurant(){
-	 	echo $this->name . PHP_EOL;
-	}
+// 	 public function nameOfRestaurant(){
+// 	 	echo $this->name . PHP_EOL;
+// 	}
 	
-	public function takeOrder(){
-		echo "We'll have your order out in 15 minutes" . PHP_EOL;
-	}
+// 	public function takeOrder(){
+// 		echo "We'll have your order out in 15 minutes" . PHP_EOL;
+// 	}
 	
-	public function deliverFood(){
-		echo "Here is your order!" . PHP_EOL;
-	}
+// 	public function deliverFood(){
+// 		echo "Here is your order!" . PHP_EOL;
+// 	}
 	
-	public function askPay(){
-		echo "What is your hourly pay here? ... I need a new job." . PHP_EOL;
-	}
+// 	public function askPay(){
+// 		echo "What is your hourly pay here? ... I need a new job." . PHP_EOL;
+// 	}
 	
-	public function hourlyWageOfEmployees(){
-		echo "Hi, how much do you make an hour here?" . PHP_EOL;
-	}
+// 	public function hourlyWageOfEmployees(){
+// 		echo "Hi, how much do you make an hour here?" . PHP_EOL;
+// 	}
 
-}
+// }
 
 
 

@@ -1,27 +1,40 @@
 <?php 
 
+require "RectangleOOP.php";
+
+$thisRectangle = new Rectangle();
+
+$thisRectangle->width = "2";
+
+$thisRectangle->height = "3";
+
+echo $thisRectangle->calculateArea(2, 3) . PHP_EOL;
+
+
+
+
  // 4) Write a class of Restaurant:
  //        - write at least 5 properties of your choice // (e.g. name, numberOfEmployees, cuisine, hoursOfOperation, etc.) examples
  //        - write at least 5 methods of your choice // (e.g. cookOrder(), takeOrder(), cleanTable() etc.)
  //        - Instantiate a restaurant object and set all properties to match your favorite restaurant in oop_test.php.
 
-require "restaurantoop.php";
+// require "restaurantoop.php";
 
-$thisRestaurant = new Restaurant();
+// $thisRestaurant = new Restaurant();
 
-$thisRestaurant->name = "Bandito's";
-$thisRestaurant->hoursOfOperation = "0900 - 1700";
-$thisRestaurant->foodServed = "Mexican Food"; 
-$thisRestaurant->numberOfEmployees = "27";
-$thisRestaurant->hourlyWageOfEmployees;
+// $thisRestaurant->name = "Bandito's";
+// $thisRestaurant->hoursOfOperation = "0900 - 1700";
+// $thisRestaurant->foodServed = "Mexican Food"; 
+// $thisRestaurant->numberOfEmployees = "27";
+// $thisRestaurant->hourlyWageOfEmployees;
 
-$thisRestaurant->nameOfRestaurant();
+// $thisRestaurant->nameOfRestaurant();
 
-$thisRestaurant->takeOrder();
+// $thisRestaurant->takeOrder();
 
-$thisRestaurant->deliverFood();
+// $thisRestaurant->deliverFood();
 
-$thisRestaurant->hourlyWageOfEmployees();
+// $thisRestaurant->hourlyWageOfEmployees();
 
 
 
